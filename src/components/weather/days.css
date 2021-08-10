@@ -1,0 +1,18 @@
+.card2 {
+  height: 22em;
+  width: 12em;
+  margin-left: 2px;
+  margin-right: 21px;
+  border: 3px white solid;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border-radius: 5%;
+  padding: 20px;
+  background: rgb(251, 254, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 254, 253, 1) 0%,
+    rgba(241, 250, 244, 1) 21%,
+    rgba(241, 250, 244, 1) 38%
+  );
+}
