@@ -10,11 +10,12 @@ export default function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+
   const fetchWeatherData = (searchValue = null) => {
     //if is a zip run zip or q for value
-    const usezipparam =
-      searchValue.length === 5 ? `zip=${searchValue}` : `q=${searchValue}`;
+    const usezipparam = searchValue.length === 5 ? `zip=${searchValue}` : `q=${searchValue}`;
     let URL = `https://api.openweathermap.org/data/2.5/forecast?&cnt=7&units=imperial&${usezipparam}&appid=${API_KEY}`;
+
     fetch(URL)
       .then((response) => {
         if (response.ok) {
