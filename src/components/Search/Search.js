@@ -12,7 +12,7 @@ export default function Search(props) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    props.fetchWeatherData(searchValue);
+    // props.fetchWeatherData(searchValue);
   };
   return (
     <div>
